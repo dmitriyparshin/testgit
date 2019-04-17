@@ -25,7 +25,9 @@
       </runner>
     </build-runners>
     <vcs-settings>
-      <vcs-entry-ref root-id="Testgit_Testgit" />
+      <vcs-entry-ref root-id="Testgit_Testgit">
+        <checkout-rule rule="+:.=&gt;./*" />
+      </vcs-entry-ref>
     </vcs-settings>
     <requirements />
     <build-triggers>
