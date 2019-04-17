@@ -7,6 +7,7 @@
   <param name="branch" value="refs/heads/master" />
   <param name="ignoreKnownHosts" value="true" />
   <param name="submoduleCheckout" value="CHECKOUT" />
+  <param name="teamcity:branchSpec" value="+:refs/heads/*" />
   <param name="teamcitySshKey" value="my" />
   <param name="url" value="ssh://git@github.com/dmitriyparshin/testgit.git" />
   <param name="useAlternates" value="true" />
