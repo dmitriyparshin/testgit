@@ -9,13 +9,6 @@
     </options>
     <parameters />
     <build-runners>
-      <runner id="RUNNER_3" name="prune" type="simpleRunner">
-        <parameters>
-          <param name="script.content" value="docker stop $(docker ps -a -q) &amp;&amp; docker rm $(docker ps -a -q) &amp;&amp; docker rmi $(docker images -q) &amp;&amp; docker volume prune" />
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
-        </parameters>
-      </runner>
       <runner id="RUNNER_1" name="docker-compose up -d" type="simpleRunner">
         <parameters>
           <param name="script.content" value="docker-compose up -d" />
